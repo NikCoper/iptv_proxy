@@ -25,7 +25,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/romaxa55/iptv-proxy/pkg/config"
+	"github.com/NikCoper/iptv_proxy/pkg/config"
 	xtream "github.com/tellytv/go.xtream-codes"
 )
 

@@ -32,8 +32,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/romaxa55/iptv-proxy/pkg/m3u"
-	xtreamapi "github.com/romaxa55/iptv-proxy/pkg/xtream-proxy"
+	"github.com/NikCoper/iptv_proxy/pkg/m3u"
+	xtreamapi "github.com/NikCoper/iptv_proxy/pkg/xtream-proxy"
 	uuid "github.com/satori/go.uuid"
 )
 

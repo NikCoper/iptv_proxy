@@ -27,9 +27,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/romaxa55/iptv-proxy/pkg/config"
+	"github.com/NikCoper/iptv_proxy/pkg/config"
 
-	"github.com/romaxa55/iptv-proxy/pkg/server"
+	"github.com/NikCoper/iptv_proxy/pkg/server"
 
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"

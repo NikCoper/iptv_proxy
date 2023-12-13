@@ -1,0 +1,23 @@
+version: "3"
+services:
+  iptv_proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # If your are using local m3u file instead of m3u remote file
+      # put your m3u file in this folder
+      - ./iptv:/root/iptv
+    container_name: iptv_proxy
+    restart: on-failure
+    env_file: .env
+    ports:
+      - 8080:8080
+    environment:
+      USER: ${USER_NAME:-test}
+      PASSWORD: ${PASSWORD:-password}
+      BITRATE_VIDEO: 512k
+      BITRATE_AUDIO: 128k
+      SCALE: 640:480
+      CRF: 33
+      PRESET: ultrafast
